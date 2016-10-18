@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE struts PUBLIC  
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"  
+    "http://struts.apache.org/dtds/struts-2.0.dtd">  
+  
+<struts>  
+    <package name="BookDB" extends="struts-default">  
+        <action name="insertAction" class="com.hyc.action.bookOperationAction" method="execute">  
+            <result name="success">/insertBook.jsp</result>
+        </action>    
+        <action name="showInfo" class="com.hyc.action.bookOperationAction" method="showInfo">
+        	<result name="success">/libBook.jsp</result>
+        </action>   
+        <action name="showAccordingToName" class="com.hyc.action.bookOperationAction" method="showAccordingToName">
+        	<result name="success">/libBook.jsp</result>
+        </action>
+        <action name="delete" class="com.hyc.action.bookOperationAction" method="delete">
+        	<result name="success">/libBook.jsp</result>
+        	<result name="fail">/index.jsp</result>
+        </action>
+        <action name="showBookInfo" class="com.hyc.action.bookOperationAction" method="showBookInfo">
+        	<result name="success">/info.jsp</result>
+        </action>
+        <action name="insert" class="com.hyc.action.bookOperationAction" method="insert">
+        	<result name="success">/libBook.jsp</result>
+        	<result name="fail">/insertBook.jsp</result>
+        	<result name="insertAuthor">/insertAuthor.jsp</result>
+        </action>
+        <action name="insertAuthor" class="com.hyc.action.bookOperationAction" method="insertAuthor">
+        	<result name="success">/libBook.jsp</result>
+        	<result name="fail">/insertAuthor.jsp</result>
+        </action>
+        <action name="updateInfo" class="com.hyc.action.bookOperationAction" method="updateInfo">
+        	<result name="success">/libBook.jsp</result>
+        	<result name="fail">/info.jsp</result>
+        </action>
+    </package>  
+</struts>
