@@ -123,7 +123,7 @@ public class bookOperationAction extends ActionSupport
 	{
 		return this.Price;
 	}
-	public String showInfo()    //展示全部的图书
+	public String showInfo()    //展示全锟斤拷锟斤拷图锟斤拷
 	{
 		bookDao bdao = new bookDao();
 		bdao.openConnection();
@@ -187,7 +187,7 @@ public class bookOperationAction extends ActionSupport
 		bdao.closeConnection();
 		return "success";
 	}
-	public String showAccordingToName()   //根据作者的名字展示所有图书信息
+	public String showAccordingToName()   //锟斤拷锟斤拷锟斤拷锟竭碉拷锟斤拷锟斤拷展示锟斤拷锟斤拷图锟斤拷锟斤拷息
 	{
 		bookDao dao = new bookDao();
 		dao.openConnection();
@@ -235,3 +235,4 @@ public class bookOperationAction extends ActionSupport
 	}
 
 }
+//eclipse涓娇鐢╡Git

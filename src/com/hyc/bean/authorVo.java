@@ -2,10 +2,10 @@ package com.hyc.bean;
 
 public class authorVo 
 {
-	private String AuthorID;   //×÷Õß±àºÅ
-	private String Name;       //×÷ÕßÐÕÃû
-	private int Age;           //×÷ÕßÄêÁä
-	private String Country;    //×÷Õß¹ú¼Ê
+	private String AuthorID;   //ï¿½ï¿½ï¿½ß±ï¿½ï¿½
+	private String Name;       //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private int Age;           //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private String Country;    //ï¿½ï¿½ï¿½ß¹ï¿½ï¿½ï¿½
 	public void setAuthorID(String AuthorID)
 	{
 		this.AuthorID = AuthorID;
